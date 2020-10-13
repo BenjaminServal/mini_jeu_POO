@@ -21,11 +21,11 @@ def battle(player1, player2)
     puts "------------"
     puts "Passons a la face d'attaque"
     while player1.life_point > 0 && player2.life_point > 0
-        player1.attaks(player2)
+        player1.attacks(player2)
         if player2.life_point <= 0
             break
         end
-        player2.attaks(player1)
+        player2.attacks(player1)
         puts "------------"
         puts "Voici l'etat de chaque joueur"
         puts "#{player1.name} a #{player1.life_point} points de vie"
